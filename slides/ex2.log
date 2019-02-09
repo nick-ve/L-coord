@@ -1,0 +1,55 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.30/00      27 June 2011   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.30/00 (tags/v5-30-00@40062, Jun 28 2011, 11:49:57 on win32)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+
+ --- Welcome to the ROOT general session --- 
+
+ === All Pythia6 and MathMore libraries loaded by default === 
+
+ *** Start at Wed Mar 21 14:11:12 2018 ***
+
+
+Processing ex2.cc...
+ *NcAstrolab::Data* Name : IceCube Title : The South Pole Neutrino Observatory
+ Lab position longitude : 0d 0' 0.00" latitude : -90d 0' 0.00"
+ Lab time offset w.r.t. UT : 00:00:00.000000000000
+ Sat, 15 Aug 2009 06:23:16.199999999997 (UT)  03:58:26.995929925350 (GMST)
+ ------------------
+ *** The internal NcRandom randomiser is currently not intialised ***
+ Automatic initialisation will be performed with the actual timestamp at the first random number request.
+ This will ensure different random sequences for different NcAstrolab instances.
+ To obtain reproducible scrambled results, please invoke SetRandomiser() before the first SetSignal() invokation.
+ ------------------
+
+Muon Local-frame phi : 318.00000 deg theta : 168.00000 deg LAHA : -8h 47m 59.99999s
+ ----------------------
+Muon Equatorial (J2000) a : 12h 46m 8.57713s d : 78d 3' 15.96675" LAHA : -8h 47m 59.99999s
+ ----------------------
+Muon Equatorial (M) a : 12h 46m 25.99718s d : 78d 0' 7.08366" LMHA : -8h 47m 59.00125s
+ ----------------------
+Muon Equatorial (T) a : 12h 46m 27.96421s d : 78d 0' 0.00000" LAHA : -8h 47m 59.99999s
+ ----------------------
+Muon Galactic l : 123.28411 deg b : 39.07198 deg LAHA : -8h 47m 59.99999s
+ ----------------------
+
+
+ --- ROOT session ended --- 
+
+ *** Started at Wed Mar 21 14:11:12 2018 ***
+
+ *** Stopped at Wed Mar 21 14:11:12 2018 ***
+
