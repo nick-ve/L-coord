@@ -8,9 +8,12 @@
 
  NcAstrolab lab;
 
+ // Load the IERS data files for the UTC parameters
+ lab.LoadUTCparameterFiles("leap.txt","dut.txt");
+
  // The Westerbork radio telescope
  lab.SetExperiment("WSRT");
- lab.SetUT("06-09-2011","21:10:34.7",0);
+ lab.SetTAI("UTC","06-09-2011","21:10:34.7",0,"A",0);
  lab.Data(1,"dms"); // Print laboratory parameters
 
  // Enter the object to be investigated
@@ -40,4 +43,4 @@
 // lab.DisplaySignal("hor","M",0,"M31","ham");
 // lab.DisplaySignal("equ","M",0,"M31","ham");
  lab.DisplaySignal("gal","M",0,"M31","ham");
- }
+}

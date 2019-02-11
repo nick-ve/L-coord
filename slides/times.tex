@@ -18,7 +18,7 @@
 \item Actual position of the Sun $\rightarrow$ {\blue Local Apparent Time (LAT)}
 \end{itemize}
 \item The difference between LAT and LMT is called the {\blue Equation of Time}
-\item[$\ast$] The reference is the \colorbox{yellow}{Greenwich Mean Time (GMT)} 
+\item[$\ast$] The reference is the \colorbox{yellow}{Greenwich Time (GMT or GAT)} 
 \end{itemize}
 
 \Tr
@@ -41,6 +41,13 @@
 \item These coord. vary due to precession and nutation of the Earth's spin axis
 \end{itemize}
 \end{itemize}
+
+\Tr
+\onecolumn
+\begin{center}
+{\blue Sidereal time versus Solar time}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{siderial-time}
+\end{center}
 
 \Tr
 \begin{itemize}
@@ -73,6 +80,8 @@
 \item[] Using a set of Cs clocks all over the world provides even better stability 
 \item[$\ast$] Basis of {\blue TAI : Temps Atomique International}
 \item TAI : Stable time system but not linked with astronomical phenomena
+\item[] TAI was introduced (= start epoch) 01-jan-1958 00:00:00 GAT
+\item[] $\rightarrow$ \colorbox{yellow}{The reference for the absolute TAI time is Greenwich}
 \item[] Earth's spin is irregular $\rightarrow$ Alternative for TAI needed
 \end{itemize}
 
@@ -85,15 +94,16 @@
 \item Astronomical time standard : {\blue UTC (Temps Universel Coordonn\'{e})}
 \item[] UTC transpires at the same rate as TAI $\rightarrow$ Clock ticks every SI second
 \item[] Average correction for the irregular Earth spin by introducing {\blue leap seconds}
+\item[$\ast$] The leap second correction was introduced on 01-jan-1972 00:00:00 GAT
 \item[] This empirical correction is needed only every few years
 \item[] See {\tt http://maia.usno.navy.mil/ser7/tai-utc.dat} for an overview
-\item This implies : {\blue TAI-UTC=$\Delta$AT} $\quad$ Currently (2014) $\Delta$AT=35 sec. 
+\item This implies : {\blue TAI-UTC=$\Delta$AT} $\quad$ Currently (2019) $\Delta$AT=37 sec. 
 \item[$\ast$] UTC is broadcast via various servers using a Network Time Protocol (NTP)
 \item[] See for instance {\tt http://www.time.gov} or {\tt http://www.time.gov/widget.html}
-\item Notes :
-\item[] {\blue The reference for the absolute UTC time is Greenwich}
+\item[$\ast$] \colorbox{yellow}{The reference for the absolute UTC time is Greenwich}
 \item[] UTC is not updated for Daylight Saving Time (DST)
-\item[] Time broadcast via GPS is locked to TAI with fixed $\Delta$AT$\equiv$14 sec.
+\item GPS timing was started at 06-jan-1980 00:00:00 UTC with $\Delta$AT=19 sec.
+\item[] GPS clocks tick at the same rate as TAI $\rightarrow$ {\blue GPS=TAI-19 sec.} (fixed)
 \end{itemize}
 
 \Tr
@@ -104,27 +114,22 @@
 \begin{itemize}
 \item Time corrected for the actual Earth spin is called {\blue Universal Time (UT1)} 
 \item[] This implies : {\blue UT1-UTC=$\Delta$UT1}
-\item[] See {\tt http://maia.usno.navy.mil/ser7/ser7.dat} for daily updates
-\item[$\ast$] $|\Delta$UT1$|$ is kept $<0.5$ sec. by introduction of leap seconds in UTC
+\item[] See {\tt https://hpiers.obspm.fr/iers/series/opa/eopc04} for daily updates
+\item[$\ast$] $|\Delta$UT1$|$ is kept $<0.9$ sec. by introduction of leap seconds in UTC
 \end{itemize}
 %
-\begin{center}
-{\red Terrestrial Time (TT)}
-\end{center}
-%
 \begin{itemize}
-\item This is the time corrected for GR effects at the Geocenter $\Fvec{x}$
-\item[] Simple relation : {\blue TT=TAI+32.184 sec.} $\rightarrow$ {\blue TT=UTC+$\Delta$AT+32.184 sec.}
+\item[] \begin{center}{\red Terrestrial Time (TT)}\end{center}
+\item This is the TAI time corrected for GR effects at average sea level
+\item[] Started at 01-jan-1977 00:00:00 TAI with {\blue TT $\equiv$ TAI+32.184 sec.}
+\item[] This makes TT a continuation of the predecessor Ephemeris Time (ET)
 \end{itemize}
 %
-\begin{center}
-{\red Geocentric Coordinate Time (TCG)}
-\end{center}
-%
 \begin{itemize}
+\item[] \begin{center}{\red Geocentric Coordinate Time (TCG)}\end{center}
 \item The same as TT but for a reference frame not in the Earth's grav. potential
 \item[] Relation : {\blue TCG $\approx$ TT+$7 \cdot 10^{-10} \Delta$T}
-\item[] $\Delta T \equiv$ elapsed time in SI sec. since 01-jan-1997 00:00:00 TT Greenwich
+\item[] $\Delta T \equiv$ elapsed time in SI sec. since 01-jan-1997 00:00:00 TT
 \end{itemize}
 
 \Tr
@@ -142,12 +147,12 @@
 \item Can't we have a steady ticking clock yielding an overall absolute reference ?
 \item[] Yes we can !
 \item A {\blue continuous day counting system} has been introduced called {\blue Julian Dates}
-\item[] {\blue Origin JD=0} has been defined as {\blue 01-jan-4713 BC at 12:00:00 UT}
-\item[] Each {\blue Julian day} has exactly {\blue 86400 SI sec.}
+\item[] {\blue Origin JD=0} has been defined as {\blue 01-jan-4713 BC at 12:00:00 Greenwich}
+\item[] Each {\blue Julian day} has exactly {\blue 86400 seconds}
 \item[] No leap seconds are introduced
 \item[] Each {\blue Julian century} has {\blue 36525 days} $\rightarrow$ Each {\blue Julian year} has {\blue 365.25 days}
 \item Example : 02-jan-2000 12:00:00 UT corresponds to JD=2451546.0
-\item[] Note : Instead of UT any other time system at Greenwich can be used
+\item[$\ast$] This day counting system can be used with any time system at Greenwich
 \end{itemize}
 
 \Tr
@@ -158,7 +163,7 @@
 \begin{itemize}
 \item To avoid too large numbers a {\blue Modified Julian Date} has been introduced 
 \item[] Same definitions as for the Julian Date but different origin
-\item[$\ast$] {\blue Origin MJD=0} has been defined as {\blue 17-nov-1858 at 00:00:00 UT}
+\item[$\ast$] {\blue Origin MJD=0} has been defined as {\blue 17-nov-1858 at 00:00:00 Greenwich}
 \item[] Consequently : {\blue MJD=JD-2400000.5}
 \item In practice MJD is used for calculations (computer accuracy), plots etc.
 \end{itemize}
@@ -168,7 +173,7 @@
 \end{center}
 %
 \begin{itemize}
-\item JE = fractional elapsed Julian year count since 01-jan-0000 12:00:00 (UT)
+\item JE = fractional elapsed Julian year count since 01-jan-0000 12:00:00
 \item[] Example : 01-jan-1965 12:00:00 UT corresponds to JE=1965.0
 \end{itemize}
 %
@@ -177,6 +182,6 @@
 \end{center}
 %
 \begin{itemize}
-\item BE = fractional elapsed Besselian year count since 01-jan-0000 12:00:00 (UT)
+\item BE = fractional elapsed Besselian year count since 01-jan-0000 12:00:00
 \item[] A Besselian (tropical) year is defined to be 365.242198781 days
 \end{itemize}

@@ -8,9 +8,12 @@
 
  NcAstrolab lab;
 
+ // Load the IERS data files for the UTC parameters
+ lab.LoadUTCparameterFiles("leap.txt","dut.txt");
+
  // The IceCube experiment
  lab.SetExperiment("IceCube");
- lab.SetUT("15-08-2009","06:23:16.2",0);
+ lab.SetTAI("UTC","15-08-2009","06:23:16.2",0,"A",0);
  lab.Data(1,"dms"); // Print laboratory parameters
 
  // Enter the observed IceCube event to be investigated

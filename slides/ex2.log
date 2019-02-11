@@ -20,14 +20,17 @@ Enclose multiple statements between { }.
 
  === All Pythia6 and MathMore libraries loaded by default === 
 
- *** Start at Wed Mar 21 14:11:12 2018 ***
+ *** Start at Mon Feb 11 02:13:19 2019 ***
 
 
 Processing ex2.cc...
  *NcAstrolab::Data* Name : IceCube Title : The South Pole Neutrino Observatory
  Lab position longitude : 0d 0' 0.00" latitude : -90d 0' 0.00"
  Lab time offset w.r.t. UT : 00:00:00.000000000000
- Sat, 15 Aug 2009 06:23:16.199999999997 (UT)  03:58:26.995929925350 (GMST)
+ Sat, 15 Aug 2009 06:23:16.427589799997 (UT)  03:58:27.224142870374 (GMST)
+ Cumulated (TAI-UTC) leap seconds:  34 UT-UTC : 0.22759 sec. (IERS database)
+ Sat, 15 Aug 2009 06:23:50.199999999997 (TAI) 06:23:16.199999999997 (UTC)
+                  06:23:31.199999999997 (GPS) 06:24:22.383999999997 (TT)
  ------------------
  *** The internal NcRandom randomiser is currently not intialised ***
  Automatic initialisation will be performed with the actual timestamp at the first random number request.
@@ -37,19 +40,19 @@ Processing ex2.cc...
 
 Muon Local-frame phi : 318.00000 deg theta : 168.00000 deg LAHA : -8h 47m 59.99999s
  ----------------------
-Muon Equatorial (J2000) a : 12h 46m 8.57713s d : 78d 3' 15.96675" LAHA : -8h 47m 59.99999s
+Muon Equatorial (J2000) a : 12h 46m 8.80637s d : 78d 3' 15.96616" LAHA : -8h 47m 59.99999s
  ----------------------
-Muon Equatorial (M) a : 12h 46m 25.99718s d : 78d 0' 7.08366" LMHA : -8h 47m 59.00125s
+Muon Equatorial (M) a : 12h 46m 26.22543s d : 78d 0' 7.08371" LMHA : -8h 47m 59.00129s
  ----------------------
-Muon Equatorial (T) a : 12h 46m 27.96421s d : 78d 0' 0.00000" LAHA : -8h 47m 59.99999s
+Muon Equatorial (T) a : 12h 46m 28.19242s d : 78d 0' 0.00000" LAHA : -8h 47m 59.99999s
  ----------------------
-Muon Galactic l : 123.28411 deg b : 39.07198 deg LAHA : -8h 47m 59.99999s
+Muon Galactic l : 123.28386 deg b : 39.07199 deg LAHA : -8h 47m 59.99999s
  ----------------------
 
 
  --- ROOT session ended --- 
 
- *** Started at Wed Mar 21 14:11:12 2018 ***
+ *** Started at Mon Feb 11 02:13:19 2019 ***
 
- *** Stopped at Wed Mar 21 14:11:12 2018 ***
+ *** Stopped at Mon Feb 11 02:13:20 2019 ***
 

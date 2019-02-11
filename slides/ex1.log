@@ -20,15 +20,18 @@ Enclose multiple statements between { }.
 
  === All Pythia6 and MathMore libraries loaded by default === 
 
- *** Start at Wed Mar 21 13:42:53 2018 ***
+ *** Start at Mon Feb 11 02:11:58 2019 ***
 
 
 Processing ex1.cc...
  *NcAstrolab::Data* Name : WSRT Title : The Westerbork Synthesis Radio Telescope
  Lab position longitude : 6d 36' 12.73" latitude : 52d 54' 54.32"
  Lab time offset w.r.t. UT : 00:26:24.849333333333
- Tue, 06 Sep 2011 21:10:34.700000000011 (UT)  20:13:00.895192916632 (GMST)
- Tue, 06 Sep 2011 21:36:59.549333333341 (LT)  20:39:25.744526249959 (LMST)
+ Tue, 06 Sep 2011 21:10:34.398952600011 (UT)  20:13:00.593321229214 (GMST)
+ Tue, 06 Sep 2011 21:36:59.248285933340 (LT)  20:39:25.442654562542 (LMST)
+ Cumulated (TAI-UTC) leap seconds:  34 UT-UTC : -0.301047 sec. (IERS database)
+ Tue, 06 Sep 2011 21:11:08.700000000011 (TAI) 21:10:34.700000000011 (UTC)
+                  21:10:49.700000000011 (GPS) 21:11:40.884000000011 (TT)
  ------------------
  *** The internal NcRandom randomiser is currently not intialised ***
  Automatic initialisation will be performed with the actual timestamp at the first random number request.
@@ -36,21 +39,21 @@ Processing ex1.cc...
  To obtain reproducible scrambled results, please invoke SetRandomiser() before the first SetSignal() invokation.
  ------------------
 
-M31 Horizontal azi : 80.69086 deg alt : 48.28919 deg LAHA : 19h 56m 5.11828s
+M31 Horizontal azi : 80.68999 deg alt : 48.28844 deg LAHA : 19h 56m 4.81641s
  ----------------------
-M31 Equatorial (J2000) a : 0h 42m 42.00000s d : 41d 16' 0.00000" LAHA : 19h 56m 5.11828s
+M31 Equatorial (J2000) a : 0h 42m 42.00000s d : 41d 16' 0.00000" LAHA : 19h 56m 4.81641s
  ----------------------
-M31 Equatorial (M) a : 0h 43m 20.47546s d : 41d 19' 49.98526" LMHA : 19h 56m 5.26906s
+M31 Equatorial (M) a : 0h 43m 20.47546s d : 41d 19' 49.98526" LMHA : 19h 56m 4.96718s
  ----------------------
-M31 Equatorial (T) a : 0h 43m 21.70991s d : 41d 19' 56.66950" LAHA : 19h 56m 5.11828s
+M31 Equatorial (T) a : 0h 43m 21.70991s d : 41d 19' 56.66950" LAHA : 19h 56m 4.81641s
  ----------------------
-M31 Galactic l : 121.17418 deg b : -21.57455 deg LMHA : 19h 56m 5.26906s
+M31 Galactic l : 121.17418 deg b : -21.57455 deg LMHA : 19h 56m 4.96718s
  ----------------------
 
 
  --- ROOT session ended --- 
 
- *** Started at Wed Mar 21 13:42:53 2018 ***
+ *** Started at Mon Feb 11 02:11:58 2019 ***
 
- *** Stopped at Wed Mar 21 13:42:53 2018 ***
+ *** Stopped at Mon Feb 11 02:11:58 2019 ***
 

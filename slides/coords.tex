@@ -1,4 +1,5 @@
 \Transcb{yellow}{blue}{Coordinate systems}
+\onecolumn
 \begin{itemize}
 \item Celestial positions : Convenient to use spherical coordinates $(r,\theta,\phi)$
 \item[] In indicating a direction, the distance doesn't matter $\rightarrow$ Ignore $r$
@@ -10,11 +11,19 @@
 \item[$\ast$] {\blue Choose a location on the equator as zero for the longitude}
 \item[] Define the directions of positive and negative latitude and longitude
 \item[] The lines of constant longitude are called {\blue meridians}
-\item Reference systems like this are called {\blue celestial coordinate systems}
+\item Reference systems like this are called {\blue celestial reference systems}
 \item[] It is obvious that there are many different possibilities for such a system 
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue A generic celestial reference system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{gen-ref}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{center}
 {\red Horizon coordinates}
 \end{center}
@@ -28,7 +37,7 @@
 \item[] The (latitude) {\blue angle above the horizon} of a star's position is called {\blue Altitude}
 \item[] Alternatively the angle w.r.t. the Zenith ({\blue Zenith angle}) of a star can be given
 \item[$\ast$] \colorbox{yellow}{Take the North point on the equator as zero longitude}
-\item[] The (longitude) {\blue angle measured eastwards} of a star's position is called {\blue Azimuth}
+\item[] The (longitude) {\blue angle measured eastwards} to a star's position is called {\blue Azimuth}
 \item[$\ast$] Notes :
 \item[] \colorbox{yellow}{For an observer at a Pole, Greenwich defines the zero longitude}
 \item[] Values of altitude and azimuth depend on the location of the observer
@@ -36,6 +45,14 @@
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue The horizon coordinate system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{alt-azi}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{center}
 {\red Equatorial coordinates}
 \end{center}
@@ -46,16 +63,25 @@
 \item[] This is quite convenient if one wants to follow a certain object
 \item[$\ast$] Due to the coincidence of the Zenith-Nadir axis with the Earth's spin axis
 \item[] $\rightarrow$ Your equator coincides with the Earth's equator
-\item \colorbox{yellow}{Conventions to define the equatorial reference system}
+\item \colorbox{yellow}{Conventions to define the equatorial celestial reference system}
 \item[$\ast$] {\blue Take the center of the Earth as the center of the reference system}
 \item[$\ast$] \colorbox{yellow}{Take the (projection of) the Earth equator as equator}
 \item[] This projection is called the {\blue celestial equator}
 \item[] The {\blue angle above the equator} of a star's position is called {\blue Declination}
-\item What to take as zero longitude ?
+\item[] The angle of longitude is called {\blue Right Ascension}
+\item {\red What to take as zero longitude ?}
 \item[] Preferably a point that doesn't change with time.
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue The equatorial celestial reference system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{equatorial-ref}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{itemize}
 \item The Earth rotates around the Sun in a fixed plane
 \item[] The Earth's spin axis is inclined ($\sim 23.4^{\circ}$) with the normal to this plane
@@ -69,10 +95,18 @@
 \item[] Going from South to North in spring $\rightarrow$ {\blue Vernal equinox}
 \item[] Going from North to South in autumn $\rightarrow$ {\blue Autumn equinox}
 \item[$\ast$] \colorbox{yellow}{Take the Vernal equinox on the equator as zero longitude}
-\item[] The {\blue angle measured eastwards} of a star's position is called {\blue Right Ascension}
+\item[] The {\blue angle measured eastwards} to a star's position is called {\blue Right Ascension}
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue The equatorial coordinate system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{ra-dec}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{itemize}
 \item Precession of the Earth's spin axis $\rightarrow$ Vernal equinox shifts along the equator
 \item[] One full turn ($360^{\circ}$) in 25770 years $\rightarrow$ Quite a stable point
@@ -95,6 +129,14 @@
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue Equatorial coordinate notations}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{hra-dec}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{itemize}
 \item Example : The position of Sirius given in the 2 most recent epochs
 \item[] B1950 $\alpha=06\text{h}\,42.9\text{m} \quad \delta=-16^{\circ} 39^{\prime}$ (B stands for Besselian epoch)
@@ -109,7 +151,7 @@
 \begin{itemize}
 \item We have seen that $(\alpha,\delta)$ provide rather constant coordinates
 \item As the Earth spins around its axis, different stars will cross a certain meridian
-\item[$\ast$] \colorbox{yellow}{Sidereal Time $\equiv \alpha$ of the stars that cross a meridian at 00:00:00h}
+\item[$\ast$] \colorbox{yellow}{Sidereal Time $\equiv \alpha$ of the stars that cross the observer's meridian}
 \item Since we can use the {\blue Mean and True coordinates} we define
 \item[] {\red LMST : Local Mean Sidereal Time}
 \item[] {\red LAST : Local Apparent Sidereal Time}
@@ -118,6 +160,7 @@
 \end{itemize}
 
 \Tr
+\onecolumn
 \begin{center}
 {\red Hour Angle}
 \end{center}
@@ -136,6 +179,7 @@
 \end{itemize}
 
 \Tr
+\onecolumn
 \begin{center}
 {\red Galactic coordinates}
 \end{center}
@@ -145,32 +189,55 @@
 \item[] In these cases it is convenient to use Galactic coordinates
 \item \colorbox{yellow}{For Galactic coordinates the Sun is defined as center}
 \item[] No effect of Earth spin or rotation around the Sun
-\item[$\ast$] \colorbox{yellow}{Take the great circle containing the Galactic Plane (GP) as equator}
-\item[] Problem : The Galactic Plane is not well defined (thickness of the disk)
-\item[$\ast$] \colorbox{yellow}{Take the direction of the Galactic Center (GC) as zero longitude}
-\item[] Problem : The position of the GC is not well known (extinction of light)
-\item Solution : {\blue Define the GP and GC by convention}
-\item[$\ast$] \colorbox{yellow}{Definition of North Galactic Pole (NGP)} (based on observations):
-\item[] $\alpha_{NGP} \equiv 12\text{h}\,49\text{m} \quad \delta \equiv 27^{\circ}\,24^{\prime}$ (B1950)
-\item[] $\rightarrow$ Celestial and Galactic equators are tilted by $62.6^{\circ}$
+\item \colorbox{yellow}{Take the great circle containing the Galactic Plane (GP) as equator}
+\item[] $\rightarrow$ Defines the {\blue North Galactic Pole (NGP)} and {\blue South Galactic Pole (SGP)}
+\item \colorbox{yellow}{Take the direction of the Galactic Center (GC) as zero longitude}
+\item[$\ast$] {\blue Galactic latitude $b$} : degrees w.r.t. Galactic equator (North +, South -)
+\item[$\ast$] {\blue Galactic longitude $l$} : degrees "eastwards" (like Right Ascension) from $l=0$
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue The galactic coordinate system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{galactic-coord}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{itemize}
+\item {\blue But there are some problems}
+\begin{enumerate}
+\item The Galactic Plane is not well defined (thickness of the disk)
+\item The position of the GC is not well known (extinction of light)
+\end{enumerate}
+\item Solution to 1 : {\blue Define the Galactic Plane by convention}
+\item[$\ast$] \colorbox{yellow}{Definition of North Galactic Pole (NGP)} (based on observations):
+\item[] $\alpha_{NGP} \equiv 12\text{h}\,49\text{m} \quad \delta \equiv 27^{\circ}\,24^{\prime}$ (B1950)
+\item[] $\rightarrow$ Celestial and Galactic equators are tilted by $62.6^{\circ}$
 \item Intersections of the Celestial and Galactic equators $\rightarrow$ None point to GC
-\item Solution : {\blue Define the Galactic long. of the North Celestial Pole by convention}
+\item[] $\rightarrow$ {\blue Define the Galactic long. of the North Celestial Pole (NCP) by convention}
 \item[] Choose the convention such that the GC gets a gal. long. of about $0^{\circ}$ 
 \item[$\ast$] \colorbox{yellow}{Galactic longitude of the North Celestial Pole (NCP) : $l_{NCP} \equiv 123^{\circ}$}
-\item {\blue Galactic latitude $b$} : degrees w.r.t. Galactic equator (North +, South -)
-\item {\blue Galactic longitude $l$} : degrees eastwards from $l=0$
 \end{itemize}
-%
+
+\Tr
+\onecolumn
+\begin{center}
+{\blue The various celestial reference systems}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{celestial-refs}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{center}
 {\red Geocentric Ecliptic coordinates}
 \end{center}
 %
 \begin{itemize}
 \item Convenient for locations w.r.t. the position of the Sun (e.g. planets, comets)
+\item[] Most planets move (more or less) in the ecliptic plane
+\item[$\ast$] \colorbox{yellow}{Define the Earth as the center}
 \item[$\ast$] \colorbox{yellow}{Take the ecliptic as equator}
 \item[$\ast$] \colorbox{yellow}{Take the Vernal equinox as zero longitude}
 \item {\blue Ecliptic latitude $\beta$} : degrees w.r.t. the ecliptic (North +, South -)
@@ -178,6 +245,14 @@
 \end{itemize}
 
 \Tr
+\onecolumn
+\begin{center}
+{\blue The Geocentric ecliptic coordinate system}\\[3mm]
+\includegraphics[keepaspectratio,height=14cm]{ecliptic-coord}
+\end{center}
+
+\Tr
+\onecolumn
 \begin{center}
 {\red The International Celestial Reference System (ICRS)}
 \end{center}
